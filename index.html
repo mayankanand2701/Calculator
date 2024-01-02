@@ -1,0 +1,38 @@
+<html>
+<head>
+    <title>Calculator</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="outer">
+        <div id="result">
+            <input type="text" id="display">
+            <br><br>
+            <hr>
+        </div>
+        <div id="buttons">
+            <input type="button" class="btn" id="seven" value="7" onclick="insertCharacter(7)">
+            <input type="button" class="btn" id="eight" value="8" onclick="insertCharacter(8)">
+            <input type="button" class="btn" id="nine" value="9" onclick="insertCharacter(9)">
+            <input type="button" class="btn" id="dvde" value="/" onclick="insertCharacter('/')">
+            <input type="button" class="btn" id="four" value="4" onclick="insertCharacter(4)">
+            <input type="button" class="btn" id="five" value="5" onclick="insertCharacter(5)">
+            <input type="button" class="btn" id="six" value="6" onclick="insertCharacter(6)">
+            <input type="button" class="btn" id="mult" value="*" onclick="insertCharacter('*')">
+            <input type="button" class="btn" id="one" value="1" onclick="insertCharacter(1)">
+            <input type="button" class="btn" id="two" value="2" onclick="insertCharacter(2)">
+            <input type="button" class="btn" id="three" value="3" onclick="insertCharacter(3)">
+            <input type="button" class="btn" id="pls" value="+" onclick="insertCharacter('+')">
+            <input type="button" class="btn" id="dot" value="." onclick="insertCharacter('.')">
+            <input type="button" class="btn" id="zero" value="0" onclick="insertCharacter(0)">
+            <input type="button" class="btn" id="mns" value="-" onclick="insertCharacter('-')">
+            <input type="button" class="btn" id="clr" value="C" onclick="clearInput()">
+        </div>
+        <div id="calq">
+            <input type="button" class="btn" id="res" value="=" onclick="result()">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
